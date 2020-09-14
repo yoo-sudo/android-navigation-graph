@@ -6,7 +6,7 @@
     app:startDestination="@id/navFirstFragment">
 
     <fragment
-        android:name="com.example.navigationgraph.Fr"
+        android:name="com.example.navigationgraph.FirstFragment"
         android:id="@+id/navFirstFragment"
         android:label="firstFragment"
         tools:layout="@layout/fragment_first">

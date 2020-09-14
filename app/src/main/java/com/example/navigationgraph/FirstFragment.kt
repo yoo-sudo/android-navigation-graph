@@ -1,4 +1,4 @@
-package com.example.navgraph
+package com.example.navigationgraph
 
 import android.os.Bundle
 import android.view.LayoutInflater

@@ -1,4 +1,4 @@
-package com.example.navgraph
+package com.example.navigationgraph
 
 import org.junit.Test
 
