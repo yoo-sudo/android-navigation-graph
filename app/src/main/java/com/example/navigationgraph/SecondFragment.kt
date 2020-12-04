@@ -21,13 +21,13 @@ class SecondFragment : Fragment() {
         super.onViewCreated(view, savedInstanceState)
         arguments?.let {
             //to pass arguments from nav graph
-            /*Toast.makeText(
+            Toast.makeText(
                 activity,
-                "navigation argument" + FirstFragmentArgs.fromBundle(arguments!!).testBool,
+                "navigation argument" + SecondFragmentArgs.fromBundle(arguments!!).testBool,
                 Toast.LENGTH_SHORT
-            ).show()*/
+            ).show()
 
-            tvText.text = arguments!!.getString("test")
+//            tvText.text = arguments!!.getString("test")
         }
 
         tvBack.setOnClickListener {

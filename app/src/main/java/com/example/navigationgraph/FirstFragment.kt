@@ -19,13 +19,14 @@ class FirstFragment : Fragment(){
     override fun onViewCreated(view: View, savedInstanceState: Bundle?) {
         super.onViewCreated(view, savedInstanceState)
 
-        val nav = Navigation.findNavController(activity!!, R.id.nav_host_fragment);
-
+//        val nav = Navigation.findNavController(activity!!, R.id.nav_host_fragment);
+        val nextAction = FirstFragmentDirections.actionFirstFragmentToSecondFragment()
+        nextAction.testBool = true
         tvNext.setOnClickListener {
             Bundle().apply {
-                putString("test", "helo")
-                nav.navigate(R.id.action_firstFragment_to_secondFragment, this)
-//                Navigation.findNavController(view).navigate(R.id.action_firstFragment_to_secondFragment, this)
+//                putString("test", "helo")
+//                nav.navigate(R.id.action_firstFragment_to_secondFragment, this)
+                Navigation.findNavController(view).navigate(nextAction)
             }
         }
     }
